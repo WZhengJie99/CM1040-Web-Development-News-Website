@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>XYZ News Economy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="lifestyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    </style>
+    <script async src="https://www.instagram.com/embed.js"></script>
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand" alt="logo">
+                <img src="../Images/xyz-logo.png" alt="logo" , class="img-thumbnail">
+            </a>
+            <a href="../index.html" class="navbar-brand" style="color: black;">
+                <h1>XYZ News</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../sport/sport.html" class="nav-link" id="sport-link">Sport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../economy/economy.html" class="nav-link" id="economy-link">Economy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="lifestyle-link">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../wellness/wellness.html" class="nav-link" id="wellness-link">Wellness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../politics/politics.html" class="nav-link" id="politics-link">Politics</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" id="search-box">
+                </form>
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" id="search-but">Search</button>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+
+    <!--Website from CNA https://cnalifestyle.channelnewsasia.com/dining/best-bars-clarke-quay-singapore-348896-->
+    <!-- showcase -->
+    <section class="showcase section-gap">
+        <div class="container">
+            <div class="row">
+                <!-- News Title -->
+                <div class="text-center">
+                    <div class="news-title">
+                        <a href="#">Lifestyle</a>
+                    </div>
+                    <h1 style="font-family: 'Playfair Display', sans-serif;">12 best bars in Clarke Quay for a fun night out: From
+                        soju buffets to retro arcades</h1>
+                    <br>
+                    <p>Whether you’re in the mood to party or chill, get whisked away to Tokyo or NYC, you can always
+                        count on the watering holes in Clarke Quay.
+                    </p>
+                    <br><br>
+                </div>
+                <!-- News Title -->
+
+                <!-- News main picture and refernce-->
+                <div class="col-lg-8 col-md-12 col-sm-12 custom-border">
+                    <div class="text-center">
+                        <img src="../Images/Photos-by-Instagram-revivalbar-herekittykitty.jpg"
+                            alt="Looking for a great night out? Clarke Quay's your place. (Photos: Instagram/revivalbar, herekittykitty)"
+                            class="img-fluid" style="width: 100%;">
+                        <div class="w-100 p-3 text-muted">
+                            <p class="pic-ref">Looking for a great night out? Clarke Quay's your place. (Photos:
+                                Instagram/revivalbar, herekittykitty)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- News main picture and reference-->
+
+                <div class="col-4 d-none d-lg-block d-xl-block d-xxl-block">
+                    <div class="row g-2 border-2 mb-2">
+                        <section class="block block-mc-content-share-bookmark block-content-share-bookmark clearfix">
+                            <br>
+                            <!-- News article authors image and name-->
+                            <!--as per original news article https://cnalifestyle.channelnewsasia.com/dining/best-bars-clarke-quay-singapore-348896-->
+                            <div class="author-card-image-wrapper">
+                                <div class="author-card-image">
+                                    <a class="link" href="https://cnalifestyle.channelnewsasia.com/author/joyce-yang">
+                                        <picture class="image">
+                                            <img loading="lazy" class="image" id="author-img"
+                                                src="https://onecms-res.cloudinary.com/image/upload/s--1tJ8S5A6--/c_fill,g_auto,h_100,w_100/f_auto,q_auto/v1/mediacorp/cna/image/2023/02/23/joyce%20yang.jpg?itok=UF6FARsZ"
+                                                alt="Joyce Yang" title="Joyce Yang">
+
+                                            <a class="link link--author-profile"
+                                                href="https://cnalifestyle.channelnewsasia.com/author/joyce-yang"
+                                                style="color: black; margin-left: 15px;">Joyce Yang</a>
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- News article authors image-->
+                            <!-- publish info-->
+                            <div class="article-publish article-publish-- mt-2">
+                                <span>
+                                    03 Mar 2023 07:05AM
+                                    <br>
+                                    (Updated: 03 Mar 2023 07:12AM)
+                                </span>
+                            </div>
+                            <!-- publish info-->
+                        </section>
+                    </div>
+
+                    <!-- social media bar to share news article-->
+                    <!--social media icons from bootstrap-->
+                    <div class="row g-2 border-2">
+                        <div class="social-media-icons-container">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black"
+                                    class="bi bi-bookmark" viewBox="0 0 16 16" focusable="false">
+                                    <path
+                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="purple"
+                                    class="bi bi-instagram" viewBox="0 0 16 16" focusable="false">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="DarkBlue"
+                                    class="bi bi-facebook" viewBox="0 0 16 16" focusable="false">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="DeepSkyBlue"
+                                    class="bi bi-twitter" viewBox="0 0 16 16" focusable="false">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- social media bar to share news article-->
+                </div>
+            </div>
+
+            <div class="text-left">
+                <div class="news-main">
+                    <p>The night is always young in Clarke Quay – the poster child of Singapore’s bar scene. It’s
+                        predictable, we know, but cliches are cliches for good reason.
+                    </p>
+                    <br>
+                    <p>It’s not just about the atmosphere, though the historic river and heritage shophouses are a
+                        welcome change of scenery after work; or that its central location means you can make nearly
+                        every happy hour on the list.
+                    </p>
+                    <br>
+                    <p>It’s how different every watering hole is; some transport you to capital cities across the world
+                        and others to your childhood or university days. We’ve rounded up the 12 best bars in Clarke
+                        Quay, from post-pandemic openings to OGs in the hood, to make an adventure out of your next
+                        drinking sesh.
+                    </p>
+                    <br>
+                    <h3 class="text-uppercase">
+                        1. Revival Bar
+                    </h3>
+                    <br>
+                    <p>Revival Bar claims to be a “world-class programme doing their best to masquerade as a humble
+                        neighbourhood bar”. I don’t know about you, but the watering holes in my area do not have
+                        interiors this plush nor a menu this sophisticated.
+                    </p>
+                    <br>
+                    <!--instagram post-->
+                    <!--All instagram posts here on out were obtained from original news article https://cnalifestyle.channelnewsasia.com/dining/best-bars-clarke-quay-singapore-348896-->
+                    <!--Formatting and embedding by https://iframely.com/domains/instagram?url=https%3A%2F%2Fwww.instagram.com%2Fp%2FCFg3LHIHGug%2F-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/CmyKy9aS4G0/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CmyKy9aS4G0/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CmyKy9aS4G0/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Revival (@revivalbarsg)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <!--instagram post-->
+                    <br>
+                    <p>Opened last April within UE Square, the establishment comprises a main room, a highly coveted
+                        nine-metre counter against hundreds of bottles in the background, and a tropical-themed patio
+                        beneath a glass canopy. The latter welcomes dogs, and bringing your good boy or girl along gets
+                        you a 10 per cent discount on Sundays.
+                    </p>
+                    <br>
+                    <p>Cocktails here are inspired by art movements through the centuries, from Baroque to Pop Art. Even
+                        if you can’t tell what’s what, you must recognise The Scream – a concoction of whisky and
+                        tequilas inspired by the renowned expressionist painting.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/Ce2eUXgvagv/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/Ce2eUXgvagv/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/Ce2eUXgvagv/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Revival (@revivalbarsg)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">205 River Valley Rd, #01-76, Singapore 238274 (The entrance is on the
+                            Unity
+                            Street side of UE Square). Details <a href="https://www.revivalbarsg.com/">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <h3 class="text-uppercase">
+                        2. Chorong Pocha
+                    </h3>
+                    <br>
+                    <p>If sky-high airfares are delaying your reunion with the Pojangmachas (tented street food wagons)
+                        in Korea, try Chorong Pocha, a pop-up bar in Clarke Quay. It’s not a fancy set-up by any means
+                        but since opening in December 2021, it quickly got everyone’s attention with two words: Soju
+                        buffets.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/CZzDSVGvNnO/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CZzDSVGvNnO/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CZzDSVGvNnO/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Jonathan Lim | SG Food Diary
+                                        (@jonnyboyeats)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">3D River Valley Rd, #01 - 13, Singapore 179023. Details <a
+                                href="https://www.instagram.com/chorongpocha/">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <p>You can choose between the 5pm to 9pm, or 9pm to midnight sessions – depending on how early you
+                        knock off and, well, whether your boss is on leave the next day. The a la carte items and other
+                        bundles offer great value to lightweight drinkers, too, complete with signature Korean snacks
+                        like corndogs, spicy rice cakes, and fried chicken bites for just S$10 a pop.
+                    </p>
+                    <br>
+                    <h3 class="text-uppercase">
+                        3. Here kitty kitty
+                    </h3>
+                    <br>
+                    <p>Here Kitty Kitty, a speakeasy bar opened by the Zouk Group in 2021, is as playful as it sounds.
+                        Described as a “vice den” (tongue firmly in cheek), the main area pays homage to the Golden Gai,
+                        a block of six alleyways in Shinjuku rife with crime and prostitution in the 1950s. This is why
+                        you’d find – beneath the unsuspecting lanterns and autumn foliage – semi-private sections filled
+                        with vintage paraphernalia and photographs of women.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/CUoh6GSMQRS/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CUoh6GSMQRS/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CUoh6GSMQRS/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Here Kitty Kitty SG (@herekittykittysg)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">3E River Valley Road, #02-01, The Cannery, Clarke Quay, 179024. Details <a
+                                href="http://www.herekittykitty.com.sg/">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <h3 class="text-uppercase">
+                        4. Gabbar Bistro Bar
+                    </h3>
+                    <br>
+                    <p>Gabbar Bistro Bar means business when they call themselves Bollywood-themed, with portraits of
+                        celebrities splashed across the wall and a banging playlist of Bollywood and Punjabi hits. Need
+                        a pick-me-up well ahead of the weekend? Promotions like Masala Mondays and Tikka Tuesdays have
+                        got you covered.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/CYaicDwPCHH/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CYaicDwPCHH/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CYaicDwPCHH/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Gabbar Bistro & Bar (@sggabbar)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">3E River Valley Road #01-05/06 - Block E @, Clarke Quay, The Circuit,
+                            179024. Details <a href="https://www.gabbar.sg/">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <p>Brunch at the modern Indian restaurant is a no-brainer: You get three street food dishes of your
+                        choice and unlimited Kolkata Pani Puri, as well as free-flow alcohol for a top-up of S$50. If
+                        not the usual wines, cocktails, and whisky, give their signature Sholay shots a chance. These
+                        come in trays of six and are named after legendary films like Pyaar Ka Punchnama and Jai Veeru.
+                    </p>
+                    <br>
+                    <h3 class="text-uppercase">
+                        5. Yin at the riverhouse
+                    </h3>
+                    <br>
+                    <p>We’re familiar with Japanese izakayas and tapas bars, but a Chinese-style watering hole? That was
+                        unheard of until YIN at The Riverhouse entered the chat in 2019, calling Singapore’s oldest
+                        Chinese mansion – a former secret society den with over 150 years of history – home.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/CS6avDZtISE/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CS6avDZtISE/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CS6avDZtISE/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Yin At The Riverhouse (@yinbarsingapore)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">3A River Valley Rd, #01 - 02, Singapore 179020. Details <a
+                                href="https://www.yinyang.sg/yin">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <h3 class="text-uppercase">
+                        6. The cooperage
+                    </h3>
+                    <br>
+                    <p>Talk of whisky bars brings to mind something of a tavern; overflowing with liquid gold and the
+                        Don Draper types. But why so serious? This is the question The Cooperage hopes to answer.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/BqEdEMoFIYE/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/BqEdEMoFIYE/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/BqEdEMoFIYE/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by The Cooperage SG (@thecooperagesg)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">42 Hongkong St, Singapore 059681. Details <a
+                                href="https://www.instagram.com/thecooperagesg/">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <p>That anyone – novices included – can get curious about whisky is their philosophy, which explains
+                        why The Cooperage looks more rustic than opulent. Whisky, the star of the show, is elaborate in
+                        variety and reasonable in price here, and you can expect to shell out S$40 for a flight of
+                        three. The selection of food also over-delivers, offering pasta, pizza, and donburi among other
+                        main courses on top of the usual bar grub.
+                    </p>
+                    <br>
+                    <h3 class="text-uppercase">
+                        7. Wine RVLT
+                    </h3>
+                    <br>
+                    <p>Singaporean sommeliers Alvin Gho and Ian Lim are likewise breaking the barriers that have
+                        traditionally made wine-drinking a straitjacket affair, which is why you’d be forgiven for
+                        mistaking Wine RVLT along Carpenter Street for a brewery. Their Instagram bio says “makan,
+                        minum, mabok” (which roughtly translates to “eat, drink, get drunk” in Malay). And from their
+                        stories, looks like how most nights go down.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/CeH7WiePqDr/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CeH7WiePqDr/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CeH7WiePqDr/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Aim Aris (@aimaris)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">38 Carpenter St, #01-01, Singapore 059917. Details <a
+                                href="https://www.winervlt.sg/">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <p>They carry wines from all over the world, including natural ones for the oenophiles among us. Bar
+                        bites do not begin to describe their menu, which will give you no reason to have dinner anywhere
+                        else. Party bites or gastronomic creations – the kitchen does it all. Think Chili Crab Ragout
+                        "Cheong Fun", and an unlikely pairing of salted cod and Portuguese egg tart.
+                    </p>
+                    <br>
+                    <h3 class="text-uppercase">
+                        8. Level Up
+                    </h3>
+                    <br>
+                    <p>Level Up, a one-of-a-kind arcade bistro bar hidden on the second storey of a conservation
+                        shophouse, speaks directly to folks who grew up before the internet. The spacious establishment
+                        looks almost like the set of Stranger Things; plastered with graffiti, neon lights, and pages of
+                        Archie comics; and littered with retro arcade machines to shoot hoops and play air hockey on.
+                        Tables for pool, beer pong, and foosball are also available for some friendly competition with
+                        other bar-goers.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/B6kmUExnjfX/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/B6kmUExnjfX/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/B6kmUExnjfX/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Level Up (@1levelupsg)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">3A River Valley Rd, #02-04 Block A, Singapore 179020. Details <a
+                                href="https://1-levelup.com/home">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <h3 class="text-uppercase">
+                        9. Redtail
+                    </h3>
+                    <br>
+                    <p>RedTail Bar is dubbed Zouk’s very own pre-party and social-gaming bar. It’s something of a frat
+                        house for sophisticated grown-ups who want to party, but have reached the age where clubbing
+                        music has gotten “too loud”.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/B6P4muLgNEG/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/B6P4muLgNEG/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/B6P4muLgNEG/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by RedTail Bar by Zouk (@redtailbarbyzouk)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">3C River Valley Road, Clarke Quay, Block C, #01-04, The Cannery, 179022.
+                            Details <a href="https://zoukclub.com/outlets/redtail-bar-by-zouk/">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <p>Win a game of beer pong and earn 500 points on top of your tab. Down their signature Blue Spin
+                        cocktail with a shot of absinthe and sprite in eight seconds and it’s on the house (or pay a
+                        S$50 fine if you fail). Food options range from Seafood Congee to Mala Fries, but the Bangers
+                        and Mash – an ode to the club’s former hotdog stand along Jiak Kim Street – deserves an honorary
+                        mention.
+                    </p>
+                    <br>
+                    <h3 class="text-uppercase">
+                        10. 28 Hong Kong Street
+                    </h3>
+                    <br>
+                    <p>Establishments in Clarke Quay have come and gone in the last decade or so, still, a trailblazer
+                        of Singapore’s cocktail and spirits scene sits faithfully at 28 Hong Kong Street. Hidden in
+                        plain sight behind a 1960s shophouse is not merely a local institution, but the first-ever
+                        winner of The Best Bar in Asia.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/Ck9_dSDP4_R/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/Ck9_dSDP4_R/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/Ck9_dSDP4_R/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Cocktail Pilgrim (@cocktailpilgrim)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">28 Hongkong St, Singapore 059667. Details <a
+                                href="https://28hks.com/">here</a>.</p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <p>Even after 12 years, the speakeasy’s vision of emulating New York’s fine drinking scene prevails
+                        in its selection of American-style cocktails and comfort food, which has only gotten bigger and
+                        better. Through a post-pandemic glow-up, it has reinvented itself with four bar concepts under
+                        one roof – from a dive bar down south to a nightclub from the Eighties.
+                    </p>
+                    <br>
+                    <h3 class="text-uppercase">
+                        11. Chupitos
+                    </h3>
+                    <br>
+                    <p>Chupitos isn’t the type of bar you drop by for a mere nightcap; it’s made for the party animals
+                        out there. It is, after all, the country’s one and only shooters bar where “island living meets
+                        party jungle”.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/BWGwRVilU_l/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/BWGwRVilU_l/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/BWGwRVilU_l/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by BiTES - The Scoop on Good Eats (@bitessg)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">3E River Valley Road #01-01 The Circuit, CQ@, Clarke Quay, 179024. Details
+                            <a href="https://www.instagram.com/chupitos_sg/">here</a>.
+                        </p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <p>One would expect no less from its menu, offering 130 types of shots that will make you feel like
+                        a kid in a candy shop. The Showstoppers selection does what it says on the box and comes with a
+                        side of theatrics. Fire, props, stunts – you name it. If you prefer something less dramatic,
+                        crowd-pleasers like Paddle Pop and Milo Godzilla promise an M18 throwback to your childhood.
+                    </p>
+                    <br>
+                    <h3 class="text-uppercase">
+                        12. Brewerkz
+                    </h3>
+                    <br>
+                    <p>Brewerkz, the longest-running craft brewery in Singapore, is an OG where nightlife in Clarke Quay
+                        is concerned. It’s been on a roll since its humble beginnings as a brewpub in 1997, taking home
+                        the title of Champion Mid-Sized Brewery of Asia at the Asia Beer Championship 2022.
+                    </p>
+                    <br>
+                    <!--instagram post and location details-->
+                    <div class="insta-post" allign="center">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/CTzjaLpJTKN/?utm_source=ig_embed&utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CTzjaLpJTKN/?utm_source=ig_embed&utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CTzjaLpJTKN/?utm_source=ig_embed&utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by ECi (@sigtoluche888)</a></p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="w-100 p-3 text-muted text-center">
+                        <p class="insta-dets">30 Merchant Rd, #01-07 Riverside Point, Singapore 058282. Details
+                            <a href="https://brewerkz.com/outlet/riverside-point/">here</a>.
+                        </p>
+                    </div>
+                    <!--instagram post and location details-->
+                    <br>
+                    <p>The 4AM DIPA, India Pale Ale, and Deer Kick Tropical Stout – all gold medalists at the awards –
+                        are worthy contenders if you only have room for a few beers. Their Golden Ale has also been
+                        snuck into dishes like Blue Mussels, Fish & Chips, and the Mexicano Burger, which you can enjoy
+                        indoors or alfresco with a money view of the Singapore River.
+                    </p>
+                </div>
+                <div class=" news-source">
+                    <br>
+                    <p class="text-muted">
+                        Source: CNA/mm
+                        <br>
+                        03 Mar 2023 07:05AM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- showcase -->
+
+
+
+    <!-- footer -->
+    <footer class="bg-primary text-center text-white">
+        <div class="container p-4">
+            <div class="social-media-icons-container">
+                <div class="col-auto">
+                    <p class="pt-2">
+                        <strong>Follow our socials</strong>
+                    </p>
+                </div>
+                <a href="https://www.instagram.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="purple" class="bi bi-instagram"
+                        viewBox="0 0 16 16" focusable="false">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="DarkBlue"
+                        class="bi bi-facebook" viewBox="0 0 16 16" focusable="false">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+                <a href="https://x.com/WZJ_99_">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="DeepSkyBlue"
+                        class="bi bi-twitter" viewBox="0 0 16 16" focusable="false">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </a>
+            </div>
+
+            <br>
+
+
+            <section class="newsletter">
+                <form class="newsletter-form">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input class="form-control" type="email" placeholder="example@email.com" id="email-box">
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-warning mb-4" id="subscribe">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="mb-4">
+                <p>
+                    By clicking subscribe, I agree to receive news updates and promotional material from XYZ News and
+                    XYZ News partners.
+                </p>
+            </section>
+
+            <script id="message-template" type="text/template">
+            You have signed up for our newsletter with {{email}}.
+            </script>
+
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">News Sections</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="../sport/sport.html" class="text-white">Sport</a>
+                            </li>
+                            <li>
+                                <a href="../economy/economy.html" class="text-white">Economy</a>
+                            </li>
+                            <li>
+                                <a href="../lifestyle/lifestyle.html" class="text-white">Lifestyle</a>
+                            </li>
+                            <li>
+                                <a href="../wellness/wellness.html" class="text-white">Wellness</a>
+                            </li>
+                            <li>
+                                <a href="../politics/politics.html" class="text-white">Politics</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">About Us</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://github.com/WZhengJie99" class="text-white">More Information</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/WZhengJie99" class="text-white">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Company</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://github.com/WZhengJie99" class="text-white">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/WZhengJie99" class="text-white">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <br>
+            © 2022 XYZ News. All rights reserved.
+            <br><br>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- footer -->
+
+
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <script src="lifestyle.js"></script>
+</body>
+
+</html>

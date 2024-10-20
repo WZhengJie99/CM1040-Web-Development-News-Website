@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>XYZ News Economy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="wellness.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand" alt="logo">
+                <img src="../Images/xyz-logo.png" alt="logo" , class="img-thumbnail">
+            </a>
+            <a href="../index.html" class="navbar-brand" style="color: black;">
+                <h1>XYZ News</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../sport/sport.html" class="nav-link" id="sport-link">Sport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../economy/economy.html" class="nav-link" id="economy-link">Economy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../lifestyle/lifestyle.html" class="nav-link" id="lifestyle-link">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="wellness-link">Wellness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../politics/politics.html" class="nav-link" id="politics-link">Politics</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" id="search-box">
+                </form>
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" id="search-but">Search</button>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+
+    <!--Website from CNA https://cnalifestyle.channelnewsasia.com/wellness/are-eggs-all-theyre-cracked-be-its-time-reality-check-348416-->
+    <!-- showcase -->
+    <section class="showcase section-gap">
+        <div class="container">
+            <div class="row">
+                <!-- News Title -->
+                <div class="text-center">
+                    <div class="news-title">
+                        <a href="#">Wellness</a>
+                    </div>
+                    <h1 style="font-family: 'Inknut Antiqua', sans-serif;">Are eggs all they're cracked up to be? It’s time for a reality check</h1>
+                    <br>
+                    <p style="font-family: 'Inknut Antiqua', sans-serif;">Here’s what to know about the myths about them that abound on social media.
+                    </p>
+                    <br>
+                </div>
+                <!-- News Title -->
+                <div class="col-1 d-none d-lg-block d-xl-block d-xxl-block"></div>
+                <!-- News main picture and refernce-->
+                <div class="col-lg-8 col-md-12 col-sm-12 custom-border">
+                    <div class="text-left">
+                        <img src="../Images/eggs-1.jpg"
+                            alt="It’s time for a reality check on eggs. (Photo: The New York Times/Johnny Miller)" class="img-fluid" style="width: 100%;">
+                        <div class="w-100 p-3 text-muted">
+                            <p class="head-pic-ref">It’s time for a reality check on eggs. (Photo: The New York
+                                Times/Johnny
+                                Miller)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- News main picture and refernce-->
+                <div class="col-3 d-none d-lg-block d-xl-block d-xxl-block">
+                    <!-- News article publication timestamp-->
+                    <div class="row g-2 border-2 mb-2">
+                        <section class="block block-mc-content-share-bookmark block-content-share-bookmark clearfix">
+                            <br>
+                            <div class="article-publish article-publish--">
+                                <span>
+                                    18 Feb 2023 06:20AM
+                                    <br>
+                                    (Updated: 18 Feb 2023 06:20AM)
+                                </span>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- News article publication timestamp-->
+                    <!-- social media bar to share news article-->
+                    <!--social media icons from bootstrap-->
+                    <div class="row g-2 border-2">
+                        <div class="social-media-icons-container">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black"
+                                    class="bi bi-bookmark" viewBox="0 0 16 16" focusable="false">
+                                    <path
+                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="purple"
+                                    class="bi bi-instagram" viewBox="0 0 16 16" focusable="false">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="DarkBlue"
+                                    class="bi bi-facebook" viewBox="0 0 16 16" focusable="false">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="DeepSkyBlue"
+                                    class="bi bi-twitter" viewBox="0 0 16 16" focusable="false">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- social media bar to share news article-->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 custom-border">
+                    <div class="text-left" style="max-width: 820px;">
+                        <div class="news-main">
+                            <p>Eggs can’t catch a break. They’re scarce on store shelves. If you do manage to track some
+                                down,
+                                you may have to shell out considerable cash, as eggs reach record prices.
+                            </p>
+                            <br>
+                            <p>An avian flu outbreak in the United States killed millions of hens in 2022, eliminating a
+                                critical egg supply. And now, a frenetic flurry of misinformation is being volleyed
+                                between pro-
+                                and anti-egg camps on social media. To Joe Rogan, eggs cause blood clots. To some on
+                                Twitter
+                                sharing screenshots of the abstract of a scholarly paper, yolks can ward off COVID-19.
+                            </p>
+                            <br>
+                            <p>This is not the first egg war. For the last 60 years or so, scientists have sparred over
+                                whether
+                                eggs are bad for the heart, said Walter Willett, a professor of nutrition at the Harvard
+                                TH Chan
+                                School of Public Health. Nutritionists have debated whether the high levels of
+                                cholesterol found
+                                in eggs outweigh the punch of protein they offer.
+                            </p>
+                            <br>
+                            <p>“They’ve been pooh-poohed for so long,” said Dr Selvi Rajagopal, an assistant professor
+                                of
+                                medicine at Johns Hopkins University School of Medicine – alternately valorised and
+                                demonised.
+                                Claims floating around social media that eggs can cure COVID-19, or lead to blood clots,
+                                are
+                                “just unsubstantiated,” she said.
+                            </p>
+                            <br>
+                            <p>Here’s what we do know about the benefits, and risks,
+                                of eggs.
+                            </p>
+                            <br>
+                            <h3 class="text-uppercase">
+                                HOW DID EGGS GET SUCH A BAD REP?
+                            </h3>
+                            <br>
+                            <div class="text-center">
+                                <img src="../Images/eggs-2.jpg" alt="(Photo: iStock)" class="img-fluid" style="width: 100%;">
+                                <div class="w-75 p-3 text-muted">
+                                    <p class="pic-ref">(Photo: iStock)</p>
+                                </div>
+                            </div>
+                            <p>In the 1960s and 1970s, Dr Willett said, doctors raised concerns about whether foods high
+                                in cholesterol could elevate the amount of it in your blood. They suspected that high
+                                levels of certain lipoproteins, which ferry cholesterol throughout the body, could form
+                                plaque on the walls of your blood vessels. Since eggs are rich in cholesterol – a single
+                                egg yolk can contain around 200 milligrams – and high lipid levels have been linked to
+                                poor cardiovascular health, some targeted them as an easy dietary fix: Ditch the eggs
+                                Benedict, and protect your heart.
+                            </p>
+                            <br>
+                            <p>But over the past decade or so, Dr Rajagopal said, researchers have questioned whether
+                                eating cholesterol-rich foods actually raises your lipid levels. The existing evidence
+                                hasn’t established that the average person will definitively gain “bad” cholesterol,
+                                known as LDL-C, based on their diet.
+                            </p>
+                            <br>
+                            <p>Saturated fat is a far more pressing culprit in heart disease, said Samantha Heller, a
+                                senior clinical nutritionist at NYU Langone Health – and while eggs contain high amounts
+                                of cholesterol, “if you eat a cheese omelet today and you haven’t eaten one in a while,
+                                your arteries aren’t going to clog immediately,” she said. Eggs are also high in
+                                protein, making them an alternative to meat, which tends to be high in saturated fat.
+                            </p>
+                            <br>
+                            <p>In 1968, the American Heart Association recommended that Americans consume no more than
+                                three eggs per week; by 2015, though, that thinking had largely shifted. The current US
+                                dietary guidelines no longer use that weekly limit, and instead promote eggs as a
+                                “nutrient-dense” protein source.
+                            </p>
+                            <br>
+                            <h3 class="text-uppercase">
+                                ARE EGGS ALL THEY’RE CRACKED UP TO BE?
+                            </h3>
+                            <br>
+                            <div class="text-center">
+                                <img src="../Images/eggs-3.jpg" alt="(Photo: iStock)" class="img-fluid" style="width: 100%;">
+                                <div class="w-75 p-3 text-muted">
+                                    <p class="pic-ref">(Photo: iStock)</p>
+                                </div>
+                            </div>
+                            <p>Eggs contain vitamins B, E and D, and they’re low in saturated fat. “You get high protein
+                                for low calories,” said Bethany Doerfler, a researcher and dietitian at Northwestern
+                                University Feinberg School of Medicine. They also contain nutrients that are beneficial
+                                for your eyes and bones, Heller said.
+                            </p>
+                            <br>
+                            <p>“There’s really more pros than cons,” said Beth Czerwony, a registered dietitian with the
+                                Cleveland Clinic’s Center for Human Nutrition, adding that some eggs are enriched with
+                                omega-3 fatty acids, depending on what hens have been fed.
+                            </p>
+                            <br>
+                            <p>That doesn’t, however, make eggs an unimpeachable superfood. Consuming an excess of eggs
+                                still carries some risk of cardiovascular disease, Doerfler said. But eating them in
+                                moderation, like one full egg (including the yolk) per day, is safe for people who don’t
+                                have underlying cardiovascular issues, she said. (You can also “bank” your eggs, she
+                                added, skipping them for a few days and then having the occasional three-egg omelet.) If
+                                you’re concerned about cholesterol, you can also stick to egg whites – but the yolk is
+                                also where most of an egg’s vitamins lie, so the drawbacks of skipping the yolk might
+                                outweigh the benefits.
+                            </p>
+                            <br>
+                            <p>It’s important to examine your overall nutritional intake, rather than homing in on one
+                                component or another, Doerfler said. A breakfast that features an egg with toast and
+                                fresh fruit, for example, is far better for your heart health than a doughnut and
+                                sweetened coffee. “Eggs are getting a lot of the spotlight,” she said. “But they’re one
+                                small piece of a dietary pattern.”
+                            </p>
+                            <br>
+                            <p>And there isn’t substantial evidence that eggs protect against COVID-19, or any other
+                                disease, experts said. “We’re looking at reality and balance,” Heller said, “not
+                                fear-mongering and scaring people.”
+                            </p>
+                        </div>
+                        <div class="news-source">
+                            <br><br>
+                            <p>By Dani Blum © The New York Times Company
+                            </p>
+                            <br>
+                            <p>The article originally appeared in <a
+                                    href="https://www.nytimes.com/2023/02/06/well/eggs-health-misinformation.html">The
+                                    New York Times.</a>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <!--See also-->
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <!--See also-->
+                    <div class="row g-2 border-2 bg-warning rounded">
+                        <section class="block block-mc-content-share-bookmark block-content-share-bookmark clearfix">
+                            <div class="article-publish article-publish--" style="padding-left: 5px;">
+                                <h3>See also:</h3>
+                            </div>
+                        </section>
+                    </div>
+                    <br>
+                    <div class="row g-2 border-2">
+                        <h5>
+                            <a href="../lifestyle/lifestyle.html" class="nav-link">
+                                <img src="../Images/Photos-by-Instagram-revivalbar-herekittykitty.jpg"
+                                    alt="Looking for a great night out? Clarke Quay's your place. (Photos: Instagram/revivalbar, herekittykitty)"
+                                    id="see-also-img">
+                                12 best bars in Clarke Quay for a fun night out: From soju buffets to retro arcades
+                            </a>
+                        </h5>
+                    </div>
+                    <!--See also-->
+                    <br><br>
+                    <!--Recommended-->
+                    <div class="row g-2 border-2 bg-warning rounded">
+                        <section class="block block-mc-content-share-bookmark block-content-share-bookmark clearfix">
+                            <div class="article-publish article-publish--" style="padding-left: 5px;">
+                                <h3>Recommended:</h3>
+                            </div>
+                        </section>
+                    </div>
+                    <br>
+                    <div class="row g-2 border-2">
+                        <h5>
+                            <a href="../economy/economy.html" class="nav-link">
+                                <img src="../Images/photo-by-AFP-Asif-HASSAN.jpg"
+                                    alt="Food, fuel and business costs in Pakistan have climbed to their highest in half a century. (Photo: AFP/Asif HASSAN)"
+                                    id="see-also-img">
+                                What more can the IMF do to help developing economies overcome debt problems?
+                            </a>
+                        </h5>
+                    </div>
+                    <br>
+                    <div class="row g-2 border-2">
+                        <h5>
+                            <a href="../sport/sport.html" class="nav-link">
+                                <img src="../Images/Barcelona-earn-gutsy-1-0-win-at-Real-in-semi-final-first-leg.jpg"
+                                    alt="FC Barcelona's Alex Balde in action with Real Madrid's Dani Carvajal REUTERS/Isabel Infantes illustration"
+                                    id="see-also-img">
+                                Barcelona earn gutsy 1-0 win at Real in semi-final first leg
+                            </a>
+                        </h5>
+                    </div>
+                    <!--Recommended-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- showcase -->
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-primary text-center text-white">
+        <div class="container p-4">
+            <div class="social-media-icons-container">
+                <div class="col-auto">
+                    <p class="pt-2">
+                        <strong>Follow our socials</strong>
+                    </p>
+                </div>
+                <a href="https://www.instagram.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="purple" class="bi bi-instagram"
+                        viewBox="0 0 16 16" focusable="false">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="DarkBlue"
+                        class="bi bi-facebook" viewBox="0 0 16 16" focusable="false">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+                <a href="https://x.com/WZJ_99_">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="DeepSkyBlue"
+                        class="bi bi-twitter" viewBox="0 0 16 16" focusable="false">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </a>
+            </div>
+
+            <br>
+
+
+            <section class="newsletter">
+                <form class="newsletter-form">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input class="form-control" type="email" placeholder="example@email.com" id="email-box">
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-warning mb-4" id="subscribe">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="mb-4">
+                <p>
+                    By clicking subscribe, I agree to receive news updates and promotional material from XYZ News and
+                    XYZ News partners.
+                </p>
+            </section>
+
+            <script id="message-template" type="text/template">
+            You have signed up for our newsletter with {{email}}.
+            </script>
+
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">News Sections</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="../sport/sport.html" class="text-white">Sport</a>
+                            </li>
+                            <li>
+                                <a href="../economy/economy.html" class="text-white">Economy</a>
+                            </li>
+                            <li>
+                                <a href="../lifestyle/lifestyle.html" class="text-white">Lifestyle</a>
+                            </li>
+                            <li>
+                                <a href="../wellness/wellness.html" class="text-white">Wellness</a>
+                            </li>
+                            <li>
+                                <a href="../politics/politics.html" class="text-white">Politics</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">About Us</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://github.com/WZhengJie99" class="text-white">More Information</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/WZhengJie99" class="text-white">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Company</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://github.com/WZhengJie99" class="text-white">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/WZhengJie99" class="text-white">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <br>
+            © 2022 XYZ News. All rights reserved.
+            <br><br>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- footer -->
+
+
+    <script src="wellness.js"></script>
+</body>
+
+</html>
